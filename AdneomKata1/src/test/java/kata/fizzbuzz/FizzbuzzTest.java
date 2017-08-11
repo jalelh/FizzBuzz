@@ -40,5 +40,10 @@ public class FizzbuzzTest {
 	public void retourneFizzBuzzSiQuinze() {
 		assertEquals(Fizzbuzz.resultatPour(15), "fizzbuzz");
 	}
+	
+	@Test
+	public void retourneFizzBuzzSiTrente() {
+		assertEquals(Fizzbuzz.resultatPour(30), "fizzbuzz");
+	}
 
 }
