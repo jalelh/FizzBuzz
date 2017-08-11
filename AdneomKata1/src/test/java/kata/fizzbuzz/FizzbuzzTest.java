@@ -20,5 +20,10 @@ public class FizzbuzzTest {
 	public void retourneFizzSiTrois() {
 		assertEquals(Fizzbuzz.resultatPour(3), "fizz");
 	}
+	
+	@Test
+	public void retourneFizzSiSix() {
+		assertEquals(Fizzbuzz.resultatPour(6), "fizz");
+	}
 
 }

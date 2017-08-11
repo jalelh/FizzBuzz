@@ -3,7 +3,7 @@ package kata.fizzbuzz;
 public class Fizzbuzz {
 
 	public static String resultatPour(int nombre) {
-		if (nombre==3) {
+		if (nombre%3==0) {
 			return "fizz";
 		}
 		return String.valueOf(nombre);
