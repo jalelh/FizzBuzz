@@ -15,5 +15,10 @@ public class FizzbuzzTest {
 	public void retourneNombreSiDeux() {
 		assertEquals(Fizzbuzz.resultatPour(2), "2");
 	}
+	
+	@Test
+	public void retourneFizzSiTrois() {
+		assertEquals(Fizzbuzz.resultatPour(3), "fizz");
+	}
 
 }
