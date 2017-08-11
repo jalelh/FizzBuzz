@@ -45,5 +45,10 @@ public class FizzbuzzTest {
 	public void retourneFizzBuzzSiTrente() {
 		assertEquals(Fizzbuzz.resultatPour(30), "fizzbuzz");
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void retourneExceptionSiZero() {
+		Fizzbuzz.resultatPour(0);
+	}
 
 }
