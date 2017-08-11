@@ -35,5 +35,10 @@ public class FizzbuzzTest {
 	public void retourneBuzzSiDix() {
 		assertEquals(Fizzbuzz.resultatPour(10), "buzz");
 	}
+	
+	@Test
+	public void retourneFizzBuzzSiQuinze() {
+		assertEquals(Fizzbuzz.resultatPour(15), "fizzbuzz");
+	}
 
 }
