@@ -50,5 +50,10 @@ public class FizzbuzzTest {
 	public void retourneExceptionSiZero() {
 		Fizzbuzz.resultatPour(0);
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void retourneExceptionSiNegative() {
+		Fizzbuzz.resultatPour(-1);
+	}
 
 }

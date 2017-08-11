@@ -3,7 +3,7 @@ package kata.fizzbuzz;
 public class Fizzbuzz {
 
 	public static String resultatPour(int nombre) {
-		if(nombre==0) {
+		if(nombre<=0) {
 			throw new IllegalArgumentException("nomber inférieur a 1");
 		}
 		
