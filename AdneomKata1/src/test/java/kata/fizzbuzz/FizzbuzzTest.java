@@ -7,8 +7,8 @@ import org.junit.Test;
 public class FizzbuzzTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void retourneNombreSiUN() {
+		assertEquals(Fizzbuzz.resultatPour(1), "1");
 	}
 
 }
