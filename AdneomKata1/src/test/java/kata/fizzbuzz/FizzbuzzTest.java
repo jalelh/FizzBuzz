@@ -7,42 +7,26 @@ import org.junit.Test;
 public class FizzbuzzTest {
 
 	@Test
-	public void retourneNombreSiUN() {
+	public void retourneNombreSiNonMultipleDeTroisNiDeCinq() {
 		assertEquals(Fizzbuzz.resultatPour(1), "1");
-	}
-	
-	@Test
-	public void retourneNombreSiDeux() {
 		assertEquals(Fizzbuzz.resultatPour(2), "2");
 	}
 	
 	@Test
-	public void retourneFizzSiTrois() {
+	public void retourneFizzSiMultipleDeTrois() {
 		assertEquals(Fizzbuzz.resultatPour(3), "fizz");
-	}
-	
-	@Test
-	public void retourneFizzSiSix() {
 		assertEquals(Fizzbuzz.resultatPour(6), "fizz");
 	}
 	
 	@Test
-	public void retourneBuzzSiCinq() {
+	public void retourneBuzzSiMultipleDeCinq() {
 		assertEquals(Fizzbuzz.resultatPour(5), "buzz");
-	}
-	
-	@Test
-	public void retourneBuzzSiDix() {
 		assertEquals(Fizzbuzz.resultatPour(10), "buzz");
 	}
 	
 	@Test
-	public void retourneFizzBuzzSiQuinze() {
+	public void retourneFizzBuzzSiMultipleDeQuinze() {
 		assertEquals(Fizzbuzz.resultatPour(15), "fizzbuzz");
-	}
-	
-	@Test
-	public void retourneFizzBuzzSiTrente() {
 		assertEquals(Fizzbuzz.resultatPour(30), "fizzbuzz");
 	}
 	

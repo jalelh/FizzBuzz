@@ -7,14 +7,28 @@ public class Fizzbuzz {
 			throw new IllegalArgumentException("nomber inférieur a 1");
 		}
 		
-		if (nombre%15==0) {
+		if (estMultipledeQuinze(nombre)) {
 			return "fizzbuzz";
-		}else if (nombre%3==0) {
+		}else if (estMultipledeTrois(nombre)) {
 			return "fizz";
-		}else if (nombre%5==0) {
+		}else if (estMultipledeCinq(nombre)) {
 			return "buzz";
+		}else {
+			return String.valueOf(nombre);
 		}
-		return String.valueOf(nombre);
+		
+	}
+
+	private static boolean estMultipledeQuinze(int nombre) {
+		return nombre%15==0;
+	}
+
+	private static boolean estMultipledeTrois(int nombre) {
+		return nombre%3==0;
+	}
+
+	private static boolean estMultipledeCinq(int nombre) {
+		return nombre%5==0;
 	}
 	
 
